@@ -1,6 +1,7 @@
 <?php
 include("header.php");
 include("dbconnect.php");
+
 function submit()
 {
     if($_SERVER["REQUEST_METHOD"]=="POST")
@@ -32,20 +33,21 @@ function submit()
         }
     }
 }
-?>
-<tr><td colspan=2><center>New Customers Please Register Here</center></td></tr>;
-<tr><td colspan=2>
-<table>
-<form method=post action=Register.php>
-<tr><td colspan=2 class=error><center><?php submit()?></center></td></tr>
-<tr><td>Firstname</td><td><input type= text name=firstname><span class=error>*</span></td></tr>
-<tr><td>Lastname</td><td><input type=text name=lastname><span class=error>*</span></td></tr>
-<tr><td>Email address</td><td><input type=email name=email><span class=error>*</span></td></tr>
-<tr><td>Password</td><td><input type=password name=password><span class=error>*</span></td></tr>
-<tr><td>Confirm Password</td><td><input type=password name=confirmpassword><span class=error>*</span></td></tr>
-<tr><td><input type=submit value=Submit></td></tr>
-</form>
-</table></td></tr>
-<?php
+
+echo "<tr><td colspan=2><center>New Customers Please Register Here</center></td></tr>";
+echo "<tr><td colspan=2>";
+echo "<table>";
+echo "<form method=post action=Register.php>";
+echo "<tr><td colspan=2 class=error><center><?php submit()?></center></td></tr>";
+echo"<tr><td>Firstname</td><td><input type= text name=firstname><span class=error>*</span></td></tr>";
+echo"<tr><td>Lastname</td><td><input type=text name=lastname><span class=error>*</span></td></tr>";
+echo"<tr><td>Email address</td><td><input type=email name=email><span class=error>*</span></td></tr>";
+echo"<tr><td>Password</td><td><input type=password name=password><span class=error>*</span></td></tr>";
+echo"<tr><td>Confirm Password</td><td><input type=password name=confirmpassword><span class=error>*</span></td></tr>";
+echo"<tr><td><input type=submit value=Submit></td></tr>";
+echo"</form>";
+echo"</table></td></tr>";
+
 include("footer.php");
+
 ?>
