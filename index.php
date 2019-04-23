@@ -37,7 +37,7 @@ function submit()
 echo "<tr><td colspan=2><center>New Customers Please Register Here</center></td></tr>";
 echo "<tr><td colspan=2>";
 echo "<table>";
-echo "<form method=post action=Register.php>";
+echo "<form method=post action=index.php>";
 echo "<tr><td colspan=2 class=error><center><?php submit()?></center></td></tr>";
 echo"<tr><td>Firstname</td><td><input type= text name=firstname><span class=error>*</span></td></tr>";
 echo"<tr><td>Lastname</td><td><input type=text name=lastname><span class=error>*</span></td></tr>";
